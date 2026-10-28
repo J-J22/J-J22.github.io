@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="ichigo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaiwardhan Joshi | Pixel Portfolio</title>
+  <meta name="description" content="Personal projects of Jaiwardhan Joshi (J-J22): Vision and Smriti. A Bleach-inspired pixel portfolio.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%230e0e10'/%3E%3Crect x='6' y='0' width='2' height='1' fill='%23e8e4dc'/%3E%3Crect x='5' y='1' width='2' height='1' fill='%23e8e4dc'/%3E%3Crect x='4' y='2' width='2' height='1' fill='%23e8e4dc'/%3E%3Crect x='3' y='3' width='2' height='1' fill='%23e8e4dc'/%3E%3Crect x='1' y='4' width='3' height='1' fill='%23ffb347'/%3E%3Crect x='1' y='5' width='2' height='1' fill='%23ff7a1a'/%3E%3Crect x='0' y='6' width='2' height='2' fill='%23e0283c'/%3E%3C/svg%3E">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("jj-theme");
+        if (saved) document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preload" href="assets/fonts/press-start-2p-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/vt323-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Butterflies and spirit particles drift here (filled by script.js) -->
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#home" aria-label="Back to top">
+        <img class="sprite" data-sprite="mask" data-scale="2" alt="">
+        <span>J-J22</span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#missions">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn--small" id="theme-toggle" type="button" aria-label="Switch colour theme">
+        <span class="theme-swatch" aria-hidden="true"></span>
+        <span id="theme-label">Ichigo</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO / TITLE SCREEN ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas class="hero__scene" id="scene" width="192" height="108" aria-hidden="true"></canvas>
+
+      <div class="hero__content">
+        <p class="hero__kicker">&gt; A SOUL HAS ENTERED THE WORLD OF THE LIVING</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="glitch" data-text="JAIWARDHAN">JAIWARDHAN</span>
+          <span class="hero__title-sub">JOSHI</span>
+        </h1>
+        <p class="hero__type">I <span id="typewriter">build things</span><span class="caret" aria-hidden="true">_</span></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#missions">&#9654; PRESS START</a>
+          <a class="btn" href="https://github.com/J-J22" target="_blank" rel="noopener">GITHUB</a>
+        </div>
+      </div>
+
+      <img class="sprite hero__sword" data-sprite="sword" data-scale="14" alt="">
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about">&#9660;</a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title">
+        <img class="sprite" data-sprite="sword" data-scale="2" alt=""> SOUL REAPER LICENSE
+      </h2>
+
+      <article class="card license reveal">
+        <div class="license__photo">
+          <img class="sprite" data-sprite="mask" data-scale="8" alt="Pixel mask avatar">
+          <span class="license__id">NO. 0022</span>
+        </div>
+        <dl class="license__fields">
+          <div><dt>NAME</dt><dd>Jaiwardhan Joshi</dd></div>
+          <div><dt>HANDLE</dt><dd><a href="https://github.com/J-J22" target="_blank" rel="noopener">J-J22</a></dd></div>
+          <div><dt>DIVISION</dt><dd>Builder &middot; AI agents &amp; apps</dd></div>
+          <div><dt>BATTLES</dt><dd>24h hackathon &middot; Smart India Hackathon 2026</dd></div>
+        </dl>
+        <p class="license__bio">
+          I like turning a rough idea into something that runs. Most of my projects start at hackathons and
+          keep going after: AI agents that plan and test their own code, and offline-first apps for people
+          who usually get left out of tech.
+        </p>
+        <div class="arsenal">
+          <h3>ARSENAL</h3>
+          <ul class="chips">
+            <li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li>
+            <li>LLM agents</li><li>PWA</li><li>IndexedDB</li><li>AWS</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="missions" aria-labelledby="missions-title">
+      <h2 class="section__title" id="missions-title">
+        <img class="sprite" data-sprite="sword" data-scale="2" alt=""> MISSION LOG
+      </h2>
+
+      <div class="missions">
+        <article class="card mission reveal">
+          <header class="mission__head">
+            <img class="sprite mission__icon" data-sprite="eye" data-scale="6" alt="">
+            <div>
+              <p class="mission__no">MISSION 01 &middot; RANK S</p>
+              <h3 class="mission__name">VISION</h3>
+            </div>
+          </header>
+          <p class="mission__tag">Others build what you typed. Vision builds what you need, and proves it works.</p>
+          <ul class="mission__points">
+            <li>A team of AI agents that takes an app idea from a first chat to a running, tested React app.</li>
+            <li>Interviews you one question at a time, then a council of 5 different AI models debates the plan.</li>
+            <li>Writes tests before code, builds, fixes, then plants bugs to prove the tests catch them.</li>
+            <li>Built in 24 hours at a hackathon.</li>
+          </ul>
+          <ul class="chips">
+            <li>Next.js</li><li>React</li><li>TypeScript</li><li>Claude API</li><li>Multi-agent</li>
+          </ul>
+          <div class="mission__links">
+            <a class="btn btn--primary" href="https://github.com/J-J22/Vision" target="_blank" rel="noopener">&#9654; VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="card mission reveal">
+          <header class="mission__head">
+            <img class="sprite mission__icon" data-sprite="lotus" data-scale="6" alt="">
+            <div>
+              <p class="mission__no">MISSION 02 &middot; SIH 2026</p>
+              <h3 class="mission__name">SMRITI</h3>
+            </div>
+          </header>
+          <p class="mission__tag">An offline memory companion for elders in North-East India.</p>
+          <ul class="mission__points">
+            <li>Cognitive games and memory help for elderly dementia patients, built for Smart India Hackathon 2026.</li>
+            <li>Two worlds: a calm patient side with no menus, timers or scores, and a normal caregiver dashboard.</li>
+            <li>Five adaptive activities, spoken reminders, and voice prompts with drop-in language packs.</li>
+            <li>Fully works offline with a service worker and IndexedDB.</li>
+          </ul>
+          <ul class="chips">
+            <li>PWA</li><li>Offline-first</li><li>IndexedDB</li><li>Voice</li><li>HealthTech</li>
+          </ul>
+          <div class="mission__links">
+            <a class="btn btn--primary" href="https://github.com/J-J22/smriti" target="_blank" rel="noopener">&#9654; VIEW CODE</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section__title" id="contact-title">
+        <img class="sprite" data-sprite="sword" data-scale="2" alt=""> SEND A HELL BUTTERFLY
+      </h2>
+      <div class="card contact reveal">
+        <img class="sprite contact__fly" data-sprite="butterfly" data-scale="6" alt="">
+        <p>Want to talk about a project, a hackathon, or anything above? Find me on GitHub.</p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="https://github.com/J-J22" target="_blank" rel="noopener">GITHUB / J-J22</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="sprite" data-sprite="butterfly" data-scale="3" alt="">
+    <p>&copy; <span id="year"></span> Jaiwardhan Joshi. Original pixel art, inspired by Bleach.
+      Not affiliated with Tite Kubo, Shueisha or Studio Pierrot.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
