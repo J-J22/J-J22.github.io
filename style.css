@@ -278,6 +278,7 @@ img.sprite {
 /* ============ CONTACT ============ */
 .contact { text-align: center; display: grid; justify-items: center; gap: 18px; }
 .contact p { margin: 0; max-width: 560px; font-size: 26px; }
+.contact__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
 .contact__fly { animation: float 2s steps(4) infinite alternate; }
 
 /* ============ FOOTER ============ */

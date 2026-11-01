@@ -13,7 +13,8 @@ A Bleach-inspired pixel portfolio for my personal projects. Plain HTML, CSS and 
 | Project | Link |
 |---|---|
 | Vision: AI agents that interview, debate, build and prove an app | https://github.com/J-J22/Vision |
-| Smriti: offline memory companion for elders (SIH 2026) | https://github.com/J-J22/smriti |
+| Smriti: offline memory companion for elders (built for an SIH 2026 problem statement) | https://github.com/J-J22/smriti |
+| ReiatsuFlow: study planner for Linux that keeps me from quitting after 3 days | https://github.com/J-J22/reiatsuflow |
 
 ## Run locally
 Open `index.html`, or `python3 -m http.server` and visit http://localhost:8000.
